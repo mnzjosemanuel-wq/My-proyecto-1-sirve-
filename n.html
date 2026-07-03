@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Nova FM</title>
+    <link rel="icon" href="favicon.ico">
+    <style>
+        /* ===== RESET Y BASE ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #111;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background: linear-gradient(90deg, #ff6600, #ffcc00);
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* ===== NAV ===== */
+        nav {
+            background: #222;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 15px 10px;
+            gap: 10px 30px;
+        }
+
+        nav a {
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 6px 12px;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: #ffcc00;
+            color: #111;
+        }
+
+        /* ===== BANNER ===== */
+        .banner img {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* ===== CONTENEDOR ===== */
+        .contenedor {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .contenedor h2 {
+            color: #ffcc00;
+            margin-bottom: 15px;
+            font-size: 2.2rem;
+        }
+
+        /* ===== TARJETAS ===== */
+        .tarjetas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        .tarjeta {
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 20px;
+            width: 280px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(255, 204, 0, 0.15);
+            transition: transform 0.3s;
+        }
+
+        .tarjeta:hover {
+            transform: translateY(-8px);
+        }
+
+        .tarjeta img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .tarjeta h3 {
+            margin: 15px 0 10px;
+            color: #ffcc00;
+        }
+
+        /* ===== AUDIO ===== */
+        .audio,
+        .video {
+            background: #1e1e1e;
+            padding: 30px 20px;
+            border-radius: 20px;
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .audio audio {
+            width: 100%;
+            max-width: 500px;
+            margin-top: 15px;
+        }
+
+        .video video {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 12px;
+            margin-top: 15px;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: #000;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+            border-top: 2px solid #ffcc00;
+        }
+
+        footer h3 {
+            color: #ffcc00;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2.4rem;
+            }
+            nav a {
+                font-size: 1rem;
+                padding: 4px 10px;
+            }
+            .tarjeta {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <h1>📻 RADIO NOVA FM</h1>
+        <p>La mejor música las 24 horas</p>
+    </header>
+
+    <!-- ===== NAV ===== -->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="programacion.html">Programación</a>
+        <a href="locutores.html">Locutores</a>
+        <a href="musica.html">Música</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <!-- ===== BANNER ===== -->
+    <div class="banner">
+        <img src="imagen 1 .jpg" alt="Banner de Radio Nova FM">
+    </div>
+
+    <!-- ===== CONTENIDO ===== -->
+    <div class="contenedor">
+
+        <h2>Bienvenidos a Radio Nova FM</h2>
+        <p style="font-size:1.1rem; max-width:800px;">
+            Somos una estación de radio dedicada a entretener, informar y acompañar a nuestros oyentes con la mejor selección musical, noticias y programas especiales.
+        </p>
+
+        <!-- ===== REPRODUCTOR ===== -->
+        <div class="audio">
+            <h2>🔴 Transmisión en Vivo</h2>
+            <p>Ahora estás escuchando nuestra programación musical continua.</p>
+            <audio controls>
+                <source src="la boda.mp3" type="audio/mpeg">
+                Tu navegador no soporta audio HTML5.
+            </audio>
+            <p style="margin-top:10px;">🎵 Sonando ahora: <strong>Música continua Radio Nova FM</strong></p>
+        </div>
+
+        <!-- ===== TARJETAS ===== -->
+        <div class="tarjetas">
+
+            <div class="tarjeta">
+                <img src="pop.jpg" alt="Música Pop">
+                <h3>🎤 Música Pop</h3>
+                <p>Los éxitos más escuchados del momento con nuestros locutores en vivo.</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="envivo.jpg" alt="Programas en Vivo">
+                <h3>📡 Programas en Vivo</h3>
+                <p>Entrevistas, noticias, concursos y entretenimiento durante todo el día.</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="locutor.jpg" alt="Locutores">
+                <h3>🎙️ Locutores</h3>
+                <p>Un equipo profesional que te acompaña las 24 horas del día.</p>
+            </div>
+
+        </div>
+
+        <!-- ===== VIDEO ===== -->
+        <div class="video">
+            <h2>🎬 Programa Destacado</h2>
+            <video controls>
+                <source src="video .mp4" type="">
+                Tu navegador no soporta videos HTML5.
+            </video>
+            <p style="margin-top:10px;">Conoce más sobre nuestra estación y nuestros programas especiales.</p>
+        </div>
+
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <h3>📻 Radio Nova FM'""' © 2026</h3>
+        <p>participo 
+        Ian Lozoya Rodríguez 
+        Juan Alberto Ramos Quintero 
+        Carlo Gabriel Martinez Fuentes 
+        José Manuel Muñiz Martinez 
+        Felix Adrian Martinez Herrera 
+</p>
+    </footer>
+
+</body>
+</html>
